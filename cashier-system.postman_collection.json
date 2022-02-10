@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "d0c0b1e4-d30c-45cb-adb1-0f425d060201",
+		"name": "cashier-system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "calculate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productPrice\": 123.5,\n    \"receivePrice\": 1234.5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/cashier/calculate",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"cashier",
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "amount",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productPrice\": 123.5,\n    \"receivePrice\": 1234.5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:80/cashier/amount",
+					"host": [
+						"localhost"
+					],
+					"port": "80",
+					"path": [
+						"cashier",
+						"amount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
